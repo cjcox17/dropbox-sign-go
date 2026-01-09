@@ -273,7 +273,9 @@ func TestSendWithTemplate_BadRequest(t *testing.T) {
 				ErrorName: "bad_request",
 			},
 		}
-		json.NewEncoder(w).Encode(response)
+		if err := json.NewEncoder(w).Encode(response); err != nil {
+			t.Errorf("failed to encode response: %v", err)
+		}
 	}))
 	defer server.Close()
 
