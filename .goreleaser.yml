@@ -1,0 +1,19 @@
+# .goreleaser.yaml
+version: 2
+before:
+  hooks:
+    - go mod tidy
+builds:
+  - skip: true # Since this is a library, we don't need to build binaries
+archives:
+  - format: tar.gz
+checksum:
+  name_template: "checksums.txt"
+snapshot:
+  name_template: "{{ .Tag }}-next"
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - "^docs:"
+      - "^test:"

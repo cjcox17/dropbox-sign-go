@@ -14,7 +14,7 @@ A modern Go client library for the Dropbox Sign API (formerly HelloSign).
 ## Installation
 
 ```bash
-go get github.com/cjcox17/dropboxsign-go-client
+go get github.com/cjcox17/dropbox-sign-go
 ```
 
 ## Usage
@@ -29,7 +29,7 @@ import (
     "fmt"
     "log"
 
-    "github.com/cjcox17/dropboxsign-go-client"
+    "github.com/cjcox17/dropbox-sign-go"
 )
 
 func main() {

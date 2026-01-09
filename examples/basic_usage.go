@@ -6,7 +6,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/cjcox17/dropboxsign-go-client"
+	dropboxsign "github.com/cjcox17/dropbox-sign-go"
 )
 
 func main() {

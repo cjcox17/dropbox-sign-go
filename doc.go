@@ -17,7 +17,7 @@
 //
 // To install the package, run:
 //
-//	go get github.com/cjcox17/dropboxsign-go-client
+//	go get github.com/cjcox17/dropbox-sign-go
 //
 // # Quick Start
 //
@@ -30,7 +30,7 @@
 //		"fmt"
 //		"log"
 //
-//		"github.com/cjcox17/dropboxsign-go-client"
+//		"github.com/cjcox17/dropbox-sign-go"
 //	)
 //
 //	func main() {
